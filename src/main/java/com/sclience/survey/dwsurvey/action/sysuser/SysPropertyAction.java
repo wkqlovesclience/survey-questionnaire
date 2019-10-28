@@ -88,7 +88,7 @@ public class SysPropertyAction extends ActionSupport{
 		writeData(siteFilePath, props);
 
 		//写LOGO DATA文件
-		String headerData="<a href=\"${ctx }\"><img alt=\"\" src=\"${ctx }/images/logo/LOGO.png\" align=\"middle\" height=\"46\" ><span class=\"titleTempSpan\">OSS</span></a> ";
+		String headerData="<a href=\"${ctx }\"><img alt=\"\" src=\"${ctx }/images/logo/LOGO-new.png\" align=\"middle\" height=\"46\" ><span class=\"titleTempSpan\">OSS</span></a> ";
 		String headerDataPath="/WEB-INF/page/layouts/logo-img.jsp".replace("/", File.separator);
 		writeData(headerDataPath, headerData);
 

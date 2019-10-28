@@ -6,13 +6,13 @@
  * @author: wangkeqiang（@wangkeqiang, wkqsclience118706@163.com）
  * @github: https://github.com/wwangkeqiang/DWSurvey
  *
- * Copyright 2012, 2017 调问问卷(DWSurvey,http://dwsurvey.net)
+ * Copyright 2012, 2017 问卷卷问卷(DWSurvey,http://dwsurvey.net)
  *
  */
 
 $(document).ready(function(){
 //	$(".createSsUl li").unbind();
-//	
+//
 //	$(".createSsUl li").hover(function(){
 //		if(toggleTag){
 //			toggleTag=false;
@@ -32,10 +32,10 @@ $(document).ready(function(){
 //		$(".a-w-sel").slideUp("slow",function(){
 //			toggleTag=true;
 //		});
-//		
+//
 //		return false;
 //	});
-	
+
 	var toggleTag=true;
 	$(".clickHideUserMenu,.clickHideMenu").unbind();
 	$(".clickHideUserMenu,.clickHideMenu").click(function(){
@@ -59,15 +59,15 @@ $(document).ready(function(){
 			$(".a-w-sel").not(stepLi.find(".a-w-sel")).hide();
 		}
 		return false;
-	
+
 	});
-	
+
 	$(document).click(function(){
 		//$(".a-w-sel").slideUp("slow");
 		$(".a-w-sel").hide();
 	});
 });
-	
+
 
 var browseWidth=$(window).width();
 var browseHeight=$(window).height();

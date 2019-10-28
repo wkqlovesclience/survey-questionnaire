@@ -23,7 +23,7 @@
 <script language="javascript" type="text/javascript" src="${ctx }/js/plugs/My97DatePickerBeta/My97DatePicker/WdatePicker.js"></script>
 <link href="${ctx }/css/design-survey.css" rel="stylesheet" type="text/css" />
 
-<!--[if lt IE 7]><link rel="stylesheet" href="ie-stuff.css" type="text/css" media="screen"/><![endif]--> 
+<!--[if lt IE 7]><link rel="stylesheet" href="ie-stuff.css" type="text/css" media="screen"/><![endif]-->
 <script type="text/javascript">
 </script>
 </head>
@@ -36,10 +36,10 @@
 
 <div id="header" >
 <div id="header_left">
-<%-- <img alt="调问网" src="${ctx }/images/logo/logo.jpg" > --%>
+<%-- <img alt="问卷卷" src="${ctx }/images/logo/logo.jpg" > --%>
 <!-- <div id="header_title">DIAOWEN-在线问卷编辑器</div> -->
 <div class="header_Item header_logo">
-		<a href="${ctx }/"><img alt="调问网" src="${ctx }/images/logo/LOGO.png" ></a>
+		<a href="${ctx }/"><img alt="问卷卷" src="${ctx }/images/logo/LOGO-new.png" ></a>
 		<!-- <div style="font-family: '微软雅黑';font-size:26px;padding-left:10px;">DIAOWEN&nbsp;&nbsp; </div>-->
 		&nbsp;&nbsp;
 		<span style="font-family: '微软雅黑';font-size: 16px;line-height: 46px;" id="pageHeaderSpan">在线问卷编辑器</span>
@@ -56,7 +56,7 @@
 <div id="tools">
 <div class="tools_tabs">
 	<div class="tools_tabs_left"><ul><li class="current" id="tools_tab1_li">基本</li></ul></div>
-	<div class="tools_tabs_right"><ul><li style="padding: 0px;font-size: 12px;line-height: 28px;"><a href="http://www.diaowen.net/buy2.jsp" target="_black" style="text-decoration: none;color: gray;">升级到高级版</a></li></ul></div>
+	<div class="tools_tabs_right"><ul><li style="padding: 0px;font-size: 12px;line-height: 28px;"><a href="//buy2.jsp" target="_black" style="text-decoration: none;color: gray;">升级到高级版</a></li></ul></div>
 </div>
 
 <div class="tools_contents">
@@ -80,10 +80,10 @@
 								<input type="hidden" name="hv" value="2">
 								<input type="hidden" name="randOrder" value="0">
 								<input type="hidden" name="cellCount" value="0">
-								
+
 								<input type="hidden" name="contactsAttr" value="0">
 								<input type="hidden" name="contactsField" value="0">
-								
+
 								<div class="quLogicInputCase">
 								<input type="hidden" name="quLogicItemNum" value="0">
 								</div>
@@ -157,10 +157,10 @@
 								<input type="hidden" name="hv" value="2">
 								<input type="hidden" name="randOrder" value="0">
 								<input type="hidden" name="cellCount" value="0">
-								
+
 								<input type="hidden" name="contactsAttr" value="0">
 								<input type="hidden" name="contactsField" value="0">
-								
+
 								<div class="quLogicInputCase">
 								<input type="hidden" name="quLogicItemNum" value="0">
 								</div>
@@ -245,13 +245,13 @@
 								<input type="hidden" name="randOrder" value="0">
 								<input type="hidden" name="cellCount" value="0">
 								<input type="hidden" name="checkType" value="NO">
-								
+
 								<input type="hidden" name="answerInputWidth" value="300">
 								<input type="hidden" name="answerInputRow" value="1">
-								
+
 								<input type="hidden" name="contactsAttr" value="0">
 								<input type="hidden" name="contactsField" value="0">
-								
+
 								<div class="quLogicInputCase">
 								<input type="hidden" name="quLogicItemNum" value="0">
 								</div>
@@ -308,7 +308,7 @@
 								<input type="hidden" name="hv" value="2">
 								<input type="hidden" name="randOrder" value="0">
 								<input type="hidden" name="cellCount" value="0">
-								
+
 								<input type="hidden" name="paramInt01" value="1">
 								<input type="hidden" name="paramInt02" value="5">
 								<div class="quLogicInputCase">
@@ -1027,13 +1027,13 @@
 	</div>
 
 	</div>
-	
+
 	<div id="tools_tab2" class="tools_tab_div">
 
 
-	
+
 	</div>
-	
+
 	<div id="toolsPubBtn" >
 		<div class="toolbars" style="padding:10px  15px 10px 0px;">
 			<ul>
@@ -1059,7 +1059,7 @@
 			<h2 class=""><a href="" class="ellipsis">欢迎页</a></h2>
 			<div>
 			<div><h2 class=""><a href="" class="ellipsis">问卷页</a></h2></div>
-			
+
 			<div style="padding-left: 5px;">
 			<h2 class=""><a href="" class="ellipsis">1、请问你的年级是？</a></h2>
 			<h2 class=""><a href="" class="ellipsis">2、请问你的年级是？</a></h2>
@@ -1086,7 +1086,7 @@
 			<div id="dwSurveyNoteEdit" class="editAble dwSvyNoteEdit"  >${survey.surveyDetail.surveyNote }</div>
 			<input type="hidden" name="svyNoteSaveTag" value="1">
 		</div>
-		
+
 		<div id="dwSurveyQuContent" style="min-height: 500px;">
 			<ul id="dwSurveyQuContentAppUl">
 				<!-- 题目内容 -->
@@ -1106,10 +1106,10 @@
 								<input type="hidden" name="hv" value="${en.hv }">
 								<input type="hidden" name="randOrder" value="${en.randOrder }">
 								<input type="hidden" name="cellCount" value="${en.cellCount }">
-								
+
 								<input type="hidden" name="contactsAttr" value="${en.contactsAttr }">
 								<input type="hidden" name="contactsField" value="${en.contactsField }">
-								
+
 								<div class="quLogicInputCase">
 								<input type="hidden" name="quLogicItemNum" value="${fn:length(en.questionLogics) }">
 								<c:forEach items="${en.questionLogics }" var="quLogicEn" varStatus="logicSts">
@@ -1119,7 +1119,7 @@
 										<input type="hidden" name="skQuId" value="${quLogicEn.skQuId }"/>
 										<input type="hidden" name="visibility" value="1">
 										<input type="hidden" name="logicSaveTag" value="1">
-										
+
 										<input type="hidden" name="geLe" value="${quLogicEn.geLe }">
 										<input type="hidden" name="scoreNum" value="${quLogicEn.scoreNum }">
 										<input type="hidden" name="logicType" value="${quLogicEn.logicType }">
@@ -1136,7 +1136,7 @@
 											<li title="删除" class="dwQuDelete"><div class="dwQuIcon"></div></li>
 										</ul>
 								</div>
-								
+
 								<div class="surveyQuItemRightTools">
 										<ul class="surveyQuItemRightToolsUl">
 											<li class="questionUp"><div class="dwQuIcon"></div></li><li class="questionDown"><div class="dwQuIcon"></div></li>
@@ -1220,11 +1220,11 @@
 										</ul>
 									</div>
 								</div>
-								
+
 							</div>
 					</div>
 					</c:when>
-					
+
 					<c:when test="${en.quType eq 'CHECKBOX' }">
 						<div class="surveyQuItemBody">
 							<div class="initLine"></div>
@@ -1238,10 +1238,10 @@
 								<input type="hidden" name="hv" value="${en.hv }">
 								<input type="hidden" name="randOrder" value="${en.randOrder }">
 								<input type="hidden" name="cellCount" value="${en.cellCount }">
-								
+
 								<input type="hidden" name="contactsAttr" value="${en.contactsAttr }">
 								<input type="hidden" name="contactsField" value="${en.contactsField }">
-								
+
 								<div class="quLogicInputCase">
 									<input type="hidden" name="quLogicItemNum" value="${fn:length(en.questionLogics) }">
 									<c:forEach items="${en.questionLogics }" var="quLogicEn" varStatus="logicSts">
@@ -1251,7 +1251,7 @@
 										<input type="hidden" name="skQuId" value="${quLogicEn.skQuId }"/>
 										<input type="hidden" name="visibility" value="1">
 										<input type="hidden" name="logicSaveTag" value="1">
-										
+
 										<input type="hidden" name="geLe" value="${quLogicEn.geLe }">
 										<input type="hidden" name="scoreNum" value="${quLogicEn.scoreNum }">
 										<input type="hidden" name="logicType" value="${quLogicEn.logicType }">
@@ -1268,7 +1268,7 @@
 											<li title="删除" class="dwQuDelete"><div class="dwQuIcon"></div></li>
 										</ul>
 								</div>
-								
+
 								<div class="surveyQuItemRightTools">
 										<ul class="surveyQuItemRightToolsUl">
 											<li class="questionUp"><div class="dwQuIcon"></div></li><li class="questionDown"><div class="dwQuIcon"></div></li>
@@ -1352,11 +1352,11 @@
 										</ul>
 									</div>
 								</div>
-								
+
 							</div>
 					</div>
 					</c:when>
-					
+
 					<c:when test="${en.quType eq 'FILLBLANK' }">
 						<div class="surveyQuItemBody">
 							<div class="initLine"></div>
@@ -1371,10 +1371,10 @@
 								<input type="hidden" name="randOrder" value="${en.randOrder }">
 								<input type="hidden" name="cellCount" value="${en.cellCount }">
 								<input type="hidden" name="checkType" value="${en.checkType }">
-								
+
 								<input type="hidden" name="answerInputWidth" value="${en.answerInputWidth }">
 								<input type="hidden" name="answerInputRow" value="${en.answerInputRow }">
-								
+
 								<input type="hidden" name="contactsAttr" value="${en.contactsAttr }">
 								<input type="hidden" name="contactsField" value="${en.contactsField }">
 								<div class="quLogicInputCase">
@@ -1386,7 +1386,7 @@
 										<input type="hidden" name="skQuId" value="${quLogicEn.skQuId }"/>
 										<input type="hidden" name="visibility" value="1">
 										<input type="hidden" name="logicSaveTag" value="1">
-										
+
 										<input type="hidden" name="geLe" value="${quLogicEn.geLe }">
 										<input type="hidden" name="scoreNum" value="${quLogicEn.scoreNum }">
 										<input type="hidden" name="logicType" value="${quLogicEn.logicType }">
@@ -1403,7 +1403,7 @@
 											<li title="删除" class="dwQuDelete"><div class="dwQuIcon"></div></li>
 										</ul>
 								</div>
-								
+
 								<div class="surveyQuItemRightTools">
 										<ul class="surveyQuItemRightToolsUl">
 											<li class="questionUp"><div class="dwQuIcon"></div></li><li class="questionDown"><div class="dwQuIcon"></div></li>
@@ -1421,11 +1421,11 @@
 											<c:choose>
 												<c:when test="${en.answerInputRow > 1 }">
 													<input type="text" style="width:${empty(en.answerInputWidth)?'300':en.answerInputWidth}px;padding:5px;display: none;" class="quFillblankAnswerInput" >
-													<textarea rows="${en.answerInputRow }" style="width:${empty(en.answerInputWidth)?'300':en.answerInputWidth}px;"class="quFillblankAnswerTextarea" ></textarea>	
+													<textarea rows="${en.answerInputRow }" style="width:${empty(en.answerInputWidth)?'300':en.answerInputWidth}px;"class="quFillblankAnswerTextarea" ></textarea>
 												</c:when>
 												<c:otherwise>
 													<input type="text" style="width:${empty(en.answerInputWidth)?'300':en.answerInputWidth}px;padding:5px;" class="quFillblankAnswerInput" >
-													<textarea rows="${empty(en.answerInputRow)?'1':en.answerInputRow }" style="width:${empty(en.answerInputWidth)?'300':en.answerInputWidth}px;display: none;"class="quFillblankAnswerTextarea" ></textarea>	
+													<textarea rows="${empty(en.answerInputRow)?'1':en.answerInputRow }" style="width:${empty(en.answerInputWidth)?'300':en.answerInputWidth}px;display: none;"class="quFillblankAnswerTextarea" ></textarea>
 												</c:otherwise>
 											</c:choose>
 												<div class="dwFbMenuBtn" ></div>
@@ -1434,11 +1434,11 @@
 									</ul>
 									</div>
 								</div>
-								
+
 							</div>
 					</div>
 					</c:when>
-					
+
 					<c:when test="${en.quType eq 'ORDERQU' }">
 						<div class="surveyQuItemBody">
 							<div class="initLine"></div>
@@ -1461,7 +1461,7 @@
 										<input type="hidden" name="skQuId" value="${quLogicEn.skQuId }"/>
 										<input type="hidden" name="visibility" value="1">
 										<input type="hidden" name="logicSaveTag" value="1">
-										
+
 										<input type="hidden" name="geLe" value="${quLogicEn.geLe }">
 										<input type="hidden" name="scoreNum" value="${quLogicEn.scoreNum }">
 										<input type="hidden" name="logicType" value="${quLogicEn.logicType }">
@@ -1478,7 +1478,7 @@
 											<li title="删除" class="dwQuDelete"><div class="dwQuIcon"></div></li>
 										</ul>
 								</div>
-								
+
 								<div class="surveyQuItemRightTools">
 										<ul class="surveyQuItemRightToolsUl">
 											<li class="questionUp"><div class="dwQuIcon"></div></li><li class="questionDown"><div class="dwQuIcon"></div></li>
@@ -1515,11 +1515,11 @@
 										</ul>
 									</div>
 								</div>
-								
+
 							</div>
 					</div>
 					</c:when>
-					
+
 					<%-- 分页题 --%>
 					<c:when test="${en.quType eq 'PAGETAG' }">
 						<div class="surveyQuItemBody">
@@ -1543,7 +1543,7 @@
 										<input type="hidden" name="skQuId" value="${quLogicEn.skQuId }"/>
 										<input type="hidden" name="visibility" value="1">
 										<input type="hidden" name="logicSaveTag" value="1">
-										
+
 										<input type="hidden" name="geLe" value="${quLogicEn.geLe }">
 										<input type="hidden" name="scoreNum" value="${quLogicEn.scoreNum }">
 										<input type="hidden" name="logicType" value="${quLogicEn.logicType }">
@@ -1557,22 +1557,22 @@
 											<li title="删除" class="dwQuDelete"><div class="dwQuIcon"></div></li>
 										</ul>
 								</div>
-								
+
 								<div class="surveyQuItemRightTools" style="margin-top: 0px;">
 										<ul class="surveyQuItemRightToolsUl">
 											<li class="questionUp"><div class="dwQuIcon"></div></li><li class="questionDown"><div class="dwQuIcon"></div></li>
 										</ul>
 								</div>
-								
+
 								<div class="pageBorderTop nohover"  ></div>
 								<div class="surveyQuItemContent" style="min-height: 10px;text-align: right;">
 									<div class="pageQuContent">下一页（1/2）</div>
 								</div>
-								
+
 							</div>
 					</div>
 					</c:when>
-					
+
 					<%--段落说明 --%>
 					<c:when test="${en.quType eq 'PARAGRAPH' }">
 						<div class="surveyQuItemBody">
@@ -1596,7 +1596,7 @@
 										<input type="hidden" name="skQuId" value="${quLogicEn.skQuId }"/>
 										<input type="hidden" name="visibility" value="1">
 										<input type="hidden" name="logicSaveTag" value="1">
-										
+
 										<input type="hidden" name="geLe" value="${quLogicEn.geLe }">
 										<input type="hidden" name="scoreNum" value="${quLogicEn.scoreNum }">
 										<input type="hidden" name="logicType" value="${quLogicEn.logicType }">
@@ -1613,7 +1613,7 @@
 											<li title="删除" class="dwQuDelete"><div class="dwQuIcon"></div></li>
 										</ul>
 								</div>
-								
+
 								<div class="surveyQuItemRightTools" style="margin-top: 5px;">
 										<ul class="surveyQuItemRightToolsUl">
 											<li class="questionUp"><div class="dwQuIcon"></div></li><li class="questionDown"><div class="dwQuIcon"></div></li>
@@ -1626,11 +1626,11 @@
 										<input type="hidden" name="quTitleSaveTag" value="1">
 									</div>
 								</div>
-								
+
 							</div>
 					</div>
 					</c:when>
-					
+
 					<%--多项填空题 --%>
 					<c:when test="${en.quType eq 'MULTIFILLBLANK' }">
 						<div class="surveyQuItemBody">
@@ -1645,7 +1645,7 @@
 								<input type="hidden" name="hv" value="${en.hv }">
 								<input type="hidden" name="randOrder" value="${en.randOrder }">
 								<input type="hidden" name="cellCount" value="${en.cellCount }">
-								
+
 								<input type="hidden" name="paramInt01" value="${en.paramInt01 }">
 								<input type="hidden" name="paramInt02" value="${en.paramInt02 }">
 								<div class="quLogicInputCase">
@@ -1657,7 +1657,7 @@
 										<input type="hidden" name="skQuId" value="${quLogicEn.skQuId }"/>
 										<input type="hidden" name="visibility" value="1">
 										<input type="hidden" name="logicSaveTag" value="1">
-										
+
 										<input type="hidden" name="geLe" value="${quLogicEn.geLe }">
 										<input type="hidden" name="scoreNum" value="${quLogicEn.scoreNum }">
 										<input type="hidden" name="logicType" value="${quLogicEn.logicType }">
@@ -1674,7 +1674,7 @@
 											<li title="删除" class="dwQuDelete"><div class="dwQuIcon"></div></li>
 										</ul>
 								</div>
-								
+
 								<div class="surveyQuItemRightTools">
 										<ul class="surveyQuItemRightToolsUl">
 											<li class="questionUp"><div class=dwQuIcon></div></li><li class="questionDown"><div class=dwQuIcon></div></li>
@@ -1696,7 +1696,7 @@
 										</tr>
 										</c:forEach>
 									</table>
-									
+
 									</div>
 									<div class="quCoBottomTools" >
 										<ul class="quCoBottomToolsUl" >
@@ -1705,17 +1705,17 @@
 										</ul>
 									</div>
 								</div>
-								
+
 							</div>
 					</div>
 					</c:when>
-					
+
 				</c:choose>
 				</li>
 	</c:forEach>
-				
+
 			</ul>
-				
+
 		</div>
 	</div>
 </div>
@@ -1783,7 +1783,7 @@
 	<input type="hidden" name="skQuId" value="0"/>
 	<input type="hidden" name="visibility" value="0">
 	<input type="hidden" name="logicSaveTag" value="0">
-	
+
 	<input type="hidden" name="geLe" value="le">
 	<input type="hidden" name="scoreNum" value="2">
 	<input type="hidden" name="logicType" value="1">
@@ -1834,7 +1834,7 @@
 			<!-- 默认显示的LOAD -->
 			<div class="dwQuDialogLoad dwQuDialogCon"><img alt="" src="${ctx }/images/load.gif"></div>
 			<!-- 题目设置 -->
-			
+
 			<div class="dwQuSetCon dwQuFormSetDialog dwQuDialogCon" >
 				<ul>
 					<!-- <li><input type="checkbox" name="quChage"><label>切换为多选</label> </li> -->
@@ -1874,7 +1874,7 @@
 				</ul>
 				<div class="dwQuDialogBtnCon" ><input type="button" value="保存" class="quDialogBtn" id="dwDialogQuSetSave"/></div>
 			</div>
-			
+
 			<!-- 逻辑设置 -->
 			<div class="dwQuDialogLogic dwQuDialogCon">
 				<div class="dwQuDialogLogicTitle">逻辑设置</div>
@@ -1883,22 +1883,22 @@
 				<div class="dwQuDialogBotEvent"><div class="dwQuDialogAddLogic"><div class="dwQuIcon"></div></div></div>
 				<div class="dwQuDialogBtnCon" ><input type="button" value="保存" class="quDialogBtn" id="dwDialogSaveLogic"/></div>
 			</div>
-			
+
 			<!-- 批量添加，单选 -->
 			<div class="dwQuAddMore dwQuDialogCon"  >
 				<div class="dwQuTextSpan">每行一个选项</div>
 				<textarea id="dwQuMoreTextarea"></textarea>
 				<div class="dwQuDialogBtnCon" ><input type="button" value="保存" class="quDialogBtn" id="dwDialogSaveMoreItem"/></div>
 			</div>
-			
-			
+
+
 		</div>
 	</div>
 	</form>
 </div>
 
 <div id="modelUIDialog">
-	
+
 	<div id="modelUIDialogContent" >
 	<!-- 填空题  填空数据类型设置  -->
 			<div class="dwQuFillDataTypeOption dwQuFormSetDialog dwQuDialogCon" >
@@ -1912,7 +1912,7 @@
 				</ul>
 				<div class="dwQuDialogBtnCon" ><input type="button" value="保存" class="quDialogBtn" id="dwDialogQuFillOptionSave"/></div>
 			</div>
-	
+
 	<div class="dwQuRadioCheckboxOption dwQuFormSetDialog dwQuDialogCon" >
 				<ul>
 					<li><label>选项设置</label></li>
@@ -1920,7 +1920,7 @@
 				</ul>
 				<div class="dwQuDialogBtnCon" ><input type="button" value="保存" class="quDialogBtn" id="dwDialogQuOptionSetSave"/></div>
 		</div>
-		
+
 		<div class="dwSurveyAttrSetDialog dwQuFormSetDialog dwQuDialogCon" >
 			<div class="tabbarDialog_1" >
 					<div class="p_DialogContent" >
@@ -1952,12 +1952,12 @@
 
 
 
-		
+
 		</div>
 </div>
 <script type="text/javascript">
 	if("${survey.surveyDetail.effective}">1){
-		$("input[name='effective']").attr("checked",true);	
+		$("input[name='effective']").attr("checked",true);
 	}else{
 		$("input[name='effective']").attr("checked",false);
 	}
@@ -1977,9 +1977,9 @@
 <div style="text-align: center;">
 <div class="dw_foot" style="padding-bottom: 30px;">
 	<div class="footer-copyright" style="color: gray;padding-top: 0px;font-size: 16px;">
-		Powered by <a href="http://www.dwsurvey.net" target="_blank" style="text-decoration: none;color: gray;">DWSurvey</a>&nbsp;&nbsp;&nbsp;
+		Powered by <a href="/" target="_blank" style="text-decoration: none;color: gray;">我想静静</a>&nbsp;&nbsp;&nbsp;
 		Copyright © 2012-2017
-		<a href="http://www.diaowen.net" target="_blank" style="text-decoration: none;color: rgb(53, 117, 136);">调问网</a>
+		<a href="/" target="_blank" style="text-decoration: none;color: rgb(53, 117, 136);">问卷卷</a>
 	</div>
 </div>
 </div>

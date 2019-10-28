@@ -5,10 +5,10 @@
 <div id="header" >
 		<div id="headerCenter"  class="bodyCenter">
 			<div class="header_Item header_logo">
-			<%-- 
+			<%--
 			<a href="${ctx }/">
-				<img alt="调问网" src="${ctx }/images/logo/LOGO.png" >
-			</a> 
+				<img alt="问卷卷" src="${ctx }/images/logo/LOGO-new.png" >
+			</a>
 			--%>
 			<%@ include file="logo-img.jsp"%>
 			</div>
@@ -29,7 +29,7 @@
 					<a href="${ctx }/login.jsp" class="btn-a-1">登录</a>
 				</div>
 			</shiro:guest>
-			
+
 			<shiro:user>
 				<div class="header_Item header_menu">
 					<ul>
@@ -39,7 +39,7 @@
 					<li><a href="${ctx }/sy/user/user-admin.action" id="usermanager">用户</a></li>
 					<li><a href="${ctx }/sy/system/sys-property!input.action" id="systemset">设置</a></li>
 						</shiro:hasRole>
-					<li><a href="http://www.diaowen.net/">帮助</a></li>
+					<li><a href="//">帮助</a></li>
 					</ul>
 				</div>
 				<div class="header_Item header_user" style="float: right;margin-top: 12px;position: relative;zoom: 1;z-index: 165;">
@@ -54,7 +54,7 @@
 		                	<div class="selc">
 		                    	<div class="selcc tbtag">
 		                            <div class="seli"><a class="nx-1" href="${ctx }/ic/user!myaccount.action">修改密码</a></div>
-		                            <div class="seli"><a class="nx-7" href="http://www.diaowen.net/">帮助及反馈</a></div>
+		                            <div class="seli"><a class="nx-7" href="//">帮助及反馈</a></div>
 		                            <div class="seli"><a class="nx-8" href="${ctx }/login!logout.action">退出</a></div>
 		                        </div>
 		                    </div>

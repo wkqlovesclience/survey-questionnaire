@@ -6,7 +6,7 @@
  * @author: wangkeqiang（@wangkeqiang, wkqsclience118706@163.com）
  * @github: https://github.com/wwangkeqiang/DWSurvey
  *
- * Copyright 2012, 2017 调问问卷(DWSurvey,http://dwsurvey.net)
+ * Copyright 2012, 2017 问卷卷问卷(DWSurvey,http://dwsurvey.net)
  *
  */
 $(document).ready(function(){

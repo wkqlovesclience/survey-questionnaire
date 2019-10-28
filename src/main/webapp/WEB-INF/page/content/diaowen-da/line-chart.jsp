@@ -28,7 +28,7 @@
 
 <title>柱状图</title>
 <script type="text/javascript">
-	
+
 $(document).ready(function(){
 	//chartData surveyResultQu
 	$(".linechart_pic,.piechart_pic").click(function(){
@@ -57,9 +57,9 @@ function buildPieChart(resultJson,quId){
 	var chartdivId="pie_chart_"+quId;
 	$("#amchart_"+quId).prepend("<div id='"+chartdivId+"'></div>");
 	$("#"+chartdivId).css({"height": "300px","width": "80%","margin":"5px"});
-	
+
 	var rows = eval("(" + resultJson  + ")");
-	
+
 	var charJsons = "[";
 	$.each(rows, function(i, item) {
 		//alert(item.optionName);
@@ -73,7 +73,7 @@ function buildPieChart(resultJson,quId){
 	});
 	charJsons = substring(charJsons);
 	charJsons += "]";
-	
+
 	 var chart;
 	 //var legend;
 	 var chartData = eval("(" + charJsons + ")");
@@ -91,7 +91,7 @@ function buildPieChart(resultJson,quId){
 			chart.angle = 30;
 			chart.labelText="[[title]] -[[description]]（[[percents]]%）";
 			chart.balloonText="[[title]]（[[percents]]% ）\n[[description]]([[value]])";
-			chart.addTitle("分析图-by-调问网", 12);
+			chart.addTitle("分析图-by-问卷卷", 12);
 			chart.marginTop=0;
 			chart.marginLeft=0;
 			chart.borderAlpha=1;
@@ -101,14 +101,14 @@ function buildPieChart(resultJson,quId){
 			chart.labelRadius=15;
 			chart.radius="50%";
 			chart.pieX="40%";
-			
+
 			 // LEGEND
                 /* legend = new AmCharts.AmLegend();
                 legend.align = "center";
                 legend.markerType = "circle";
                 //chart.balloonText = "[[title]]-[[description]]<br><span style='font-size:14px'><b>[[value]]</b> ([[percents]]%)</span>";
                 chart.addLegend(legend); */
-                
+
 			chart.amExport = {
                     top: 21,
                     right: 21,
@@ -122,11 +122,11 @@ function buildPieChart(resultJson,quId){
 			chart.write(chartdivId);
 		})();
 }
-	
+
 	//统计的jsonId,图放写入的divId
 	function buildChart(statJsonId,chartdivId){
 		var rows = eval("(" + $("#"+statJsonId).html()  + ")");
-		
+
 		var charJsons = "[";
 		$.each(rows, function(i, item) {
 			//alert(item.optionName);
@@ -140,7 +140,7 @@ function buildPieChart(resultJson,quId){
 		});
 		charJsons = substring(charJsons);
 		charJsons += "]";
-		
+
 		 var chart;
 		 var chartData = eval("(" + charJsons + ")");
 
@@ -162,7 +162,7 @@ function buildPieChart(resultJson,quId){
 				// value
 				var valueAxis = new AmCharts.ValueAxis();
 				chart.addValueAxis(valueAxis);
-		 
+
 				// GRAPH
 				var graph = new AmCharts.AmGraph();
 				graph.valueField = "visits";
@@ -175,8 +175,8 @@ function buildPieChart(resultJson,quId){
 				chart.addGraph(graph);
 				chart.marginTop=30;
 				//chart.color="#0081CC";
-				
-				 
+
+
 				chart.amExport = {
 	                    top: 21,
 	                    right: 21,
@@ -187,13 +187,13 @@ function buildPieChart(resultJson,quId){
 	                    exportPDF:true,
 	                    exportSVG:true
 	                };
-				
+
 				//chart.rotate = true;  切换为纵向
 	                // WRITE
 				chart.write(chartdivId);
 			});
 	}
-	
+
 	function substring(json) {
 		var bufLen = json.length;
 		var lastIndex = json.lastIndexOf(",");
@@ -202,12 +202,12 @@ function buildPieChart(resultJson,quId){
 		}
 		return json;
 	}
-	
+
 </script>
 </head>
 <body>
 	<input type="hidden" id="id" name="id" value="${surveyId }">
-	
+
 	<div class="creatgeSurveyStepBody">
 		<div class="creatgeSurveyStepContent bodyCenter">
 				<ul class="createSsUl">
@@ -244,7 +244,7 @@ function buildPieChart(resultJson,quId){
 			</ul>
 		</div>
 	</div>
-	
+
 	<div style="">
 		<div class="main-tabs-content bodyCenter">
 			<div class="tab-content">
@@ -261,8 +261,8 @@ function buildPieChart(resultJson,quId){
 		<div id="dwBodyContent" class="bodyCenter" style="border:1px solid #C1DAEC;">
 		<div id="dwBodyUser">
 			<div class="surveyCollectMiddle">
-				
-				
+
+
 				<div class="surveyCollectTop">
 					<div class="surveyCollectTitleDiv">
 						<span class="surveyCollectTitle">${directory.surveyName }</span>
@@ -280,7 +280,7 @@ function buildPieChart(resultJson,quId){
 						</span>
 					</div>
 				</div>
-				
+
 				<div class="surveyCollectMiddleContent">
 					<div style="padding: 15px 25px;overflow: auto;">
 							<div style="overflow: auto;">
@@ -294,7 +294,7 @@ function buildPieChart(resultJson,quId){
 							</div>
 							<div style="padding-top:8px;">
 								<div class="" style="border: 1px solid #D1D6DD;padding: 10px;">
-									
+
 									<table id="content-tableList" width="100%"  cellpadding="0" cellspacing="0">
 								<c:forEach items="${surveyStats.questions }" var="en" varStatus="i">
 								<tr>
@@ -463,7 +463,7 @@ function buildPieChart(resultJson,quId){
 															<td width="40px">&nbsp;</td>
 														</tr>
 														<script type="text/javascript">
-															
+
 														</script>
 												</c:forEach>
 													</table>
@@ -479,7 +479,7 @@ function buildPieChart(resultJson,quId){
 															<td width="40px">&nbsp;</td>
 														</tr>
 														<script type="text/javascript">
-															
+
 														</script>
 													</c:forEach>
 													</table>
@@ -495,7 +495,7 @@ function buildPieChart(resultJson,quId){
 															<td width="40px">&nbsp;</td>
 														</tr>
 														<script type="text/javascript">
-															
+
 														</script>
 													</c:forEach>
 													</table>
@@ -534,14 +534,14 @@ function buildPieChart(resultJson,quId){
 								</tr>
 								</c:forEach>
 							</table>
-									
+
 								</div>
-							</div>			
+							</div>
 					</div>
-					
+
 				</div>
 			</div>
-			
+
 		</div>
 		</div>
 	</div>

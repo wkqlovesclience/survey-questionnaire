@@ -2,21 +2,21 @@
     pageEncoding="UTF-8"%>
 <div style="color: gray;">
 	<h3 style="line-height: 40px;">联系信息</h3>
-	<p style="line-height: 40px;">邮箱：service@diaowen.net</p>
+	<p style="line-height: 40px;">邮箱：wkqsckience118706@163.com</p>
 	<p style="line-height: 40px;">电话：0000000000</p>
 	<p style="line-height: 40px;">京ICP备13050030号-3</p>
 </div>
 
-<%-- 
+<%--
 <div class="dw_foot" style="padding-top:20px;">
-	
+
 	<div class="dw_footnav">
 		<a href="/" style="color: gray;font-size: 16px;">京ICP备13050030号-3&nbsp;&nbsp;&nbsp;</a>
-	</div> 
+	</div>
 	<div class="footer-copyright" style="color: gray;padding-top: 0px;font-size: 16px;">
-		Powered by <a href="http://www.diaowen.net" style="text-decoration: none;color: gray;">DIANWEN</a>
+		Powered by <a href="/" style="text-decoration: none;color: gray;">我想静静</a>
 		&nbsp;&nbsp;&nbsp;Copyright © 2012-2016
-		<a href="http://www.diaowen.net" style="text-decoration: none;color: rgb(53, 117, 136);">调问网</a>
+		<a href="/" style="text-decoration: none;color: rgb(53, 117, 136);">问卷卷</a>
 	</div>
 </div>
 <div id="footer_wrapper">
@@ -33,7 +33,7 @@
         <div class="cleaner"></div>
 	</div>
 </div>
-<div class="weixinImgPos" style="font-size:12px">      
+<div class="weixinImgPos" style="font-size:12px">
 	<img src="${ctx }/images/dianwen_weixin.jpg"   width="130" style="padding:5px;">
 	<div>扫描并关注微信账号</div>
 </div> --%>

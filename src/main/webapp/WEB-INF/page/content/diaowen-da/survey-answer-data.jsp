@@ -15,7 +15,7 @@
 </head>
 <body>
 	<input type="hidden" id="id" name="id" value="${survey.id }">
-	
+
 	<div class="creatgeSurveyStepBody">
 		<div class="creatgeSurveyStepContent bodyCenter">
 			<ul class="createSsUl">
@@ -52,7 +52,7 @@
 			</ul>
 		</div>
 	</div>
-	
+
 	<div style="">
 		<div class="main-tabs-content bodyCenter">
 			<div class="tab-content">
@@ -68,7 +68,7 @@
 		<div id="dwBodyContent" class="bodyCenter" style="border:1px solid #C1DAEC;">
 		<div id="dwBodyUser">
 			<div class="surveyCollectMiddle">
-				
+
 				<div class="surveyCollectTop">
 					<div class="surveyCollectTitleDiv">
 						<span class="surveyCollectTitle">${survey.surveyName }</span>
@@ -84,7 +84,7 @@
 									<a href="" class="surveyStateBtn sbtn25 sbtn25_2">重新打开收集</a>
 								</c:when>
 							</c:choose>
-							
+
 						</div>
 					</div>
 					<div class="surveyCollectInfoDiv">
@@ -97,11 +97,11 @@
 						</span>
 					</div>
 				</div>
-				
+
 				<div class="surveyCollectMiddleContent">
-					
+
 					<div class="collect_1_content">
-					
+
 					<div style="padding:0px 60px;">
 						<div style="" >
 							<div style="overflow: auto;">
@@ -113,7 +113,7 @@
 							</div>
 							<!-- 添加收件人 -->
 							<!-- <div><a href="" class="addInboxUser"><span class="addInboxUserLeft">&nbsp;</span><span>添加收件人</span></a></div> -->
-							<div style="padding: 5px;display: none;"><a href="http://www.diaowen.net/wenjuan/${survey.sid }.html" class="" >查看问卷</a></div>
+							<div style="padding: 5px;display: none;"><a href="//wenjuan/${survey.sid }.html" class="" >查看问卷</a></div>
 							<div style="padding-top: 5px;">
 								<table class="emailInboxList contacts-table" width="100%" border="0" cellpadding="0" cellspacing="0">
 									<tr>
@@ -141,7 +141,7 @@
 									</c:forEach>
 								</table>
 							</div>
-							
+
 							<div style="padding-top: 15px;text-align: center;">
 									<div class="btn-group">
 										<c:if test="${page.pageNo > 1}">
@@ -168,20 +168,20 @@
 										<c:if test="${page.totalPage > page.pageNo}">
 											<a href="${ctx }/da/my-survey-answer.action?surveyId=${surveyId }&page.pageNo=${page.pageNo+1}" class="btn btn-default">&gt;</a>
 										</c:if>
-										
+
 									</div>
 								</div>
-							
-							
+
+
 						</div>
 					</div>
 					</div>
-					
-					
-					
+
+
+
 				</div>
 			</div>
-			
+
 		</div>
 		</div>
 	</div>
@@ -191,7 +191,7 @@ $(".scmcSurveySNSShare textarea").focus(function(){
 	$(this).css({"background-color":"#FDF9CD","border-color":"#98C5C3"});
 });
 $(".scmcSurveySNSShare textarea").blur(function(){
-	$(this).css("background-color","#F9F7D7");	
+	$(this).css("background-color","#F9F7D7");
 });
 
 $(".deleteSurveyAnswer").click(function(){

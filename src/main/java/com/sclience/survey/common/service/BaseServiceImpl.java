@@ -15,7 +15,7 @@ import java.util.List;
  * @author wangkeqiang(wkqsclience118706@163.com)
  *
  * https://github.com/wwangkeqiang/DWSurvey
- * http://www.dwsurvey.net
+ * /
  */
 @Transactional
 public abstract class BaseServiceImpl<T extends IdEntity, ID extends Serializable>

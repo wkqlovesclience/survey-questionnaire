@@ -46,7 +46,7 @@
 			</ul>
 		</div>
 	</div>
-	
+
 	<div style="">
 		<div class="main-tabs-content bodyCenter">
 			<div class="tab-content">
@@ -65,7 +65,7 @@
 		<div id="dwBodyContent" class="bodyCenter" style="border:1px solid #C1DAEC;">
 		<div id="dwBodyUser">
 			<div class="surveyCollectMiddle">
-				
+
 				<!-- <div class="surveyCollectMiddleTab">
 					<div class="scmTabLeft">
 						<div class="scmTabLeftItem"><a href="">问卷设计</a>&nbsp;&nbsp;&gt;</div>
@@ -97,7 +97,7 @@
 									<a href="" class="surveyStateBtn sbtn25 sbtn25_2">重新打开收集</a>
 								</c:when>
 							</c:choose>
-							
+
 						</div>
 					</div>
 					<div class="surveyCollectInfoDiv">
@@ -110,9 +110,9 @@
 						</span>
 					</div>
 				</div>
-				
+
 				<div class="surveyCollectMiddleContent">
-					
+
 					<div class="collect_1_content">
 					<div style="padding:0px 60px;">
 						<div style="" >
@@ -127,12 +127,12 @@
 							<div style="clear: both;"></div>
 							<div style="padding-bottom: 20px;">
 								<div style="border: 1px solid rgb(234, 231, 231);padding: 5px;">
-									<textarea id="shareSurTextarea" rows="5" cols="30" style="width: 100%;height: 160px;border: none;outline: none;resize:none;font-size: 16px;" >大家好，我刚刚通过调问网制作了一份调查问卷“${survey.surveyName }”，需要您的帮助，您的意见非常重要。快快来吧帮忙回答。</textarea>
+									<textarea id="shareSurTextarea" rows="5" cols="30" style="width: 100%;height: 160px;border: none;outline: none;resize:none;font-size: 16px;" >大家好，我刚刚通过问卷卷制作了一份调查问卷“${survey.surveyName }”，需要您的帮助，您的意见非常重要。快快来吧帮忙回答。</textarea>
 								</div>
 								<div style="padding: 5px;background: rgb(234, 231, 231);height: 40px;">
 									<div style="float: left;line-height: 45px;">分享到&nbsp;&nbsp;</div>
 									<div style="float: left;"><!-- Baidu Button BEGIN -->
-											<div id="bdshare" class="bdshare_t bds_tools_32 get-codes-bdshare"  data='{"text":"大家好，我刚刚通过调问网制作了一份调查问卷“${survey.surveyName }”，需要您的帮助，您的意见非常重要。快快来吧帮忙回答。", "url":"http://www.diaowen.net/wenjuan/${survey.sid }.html","pic":"http://www.diaowen.net/images/logo/200-200.png"}'>
+											<div id="bdshare" class="bdshare_t bds_tools_32 get-codes-bdshare"  data='{"text":"大家好，我刚刚通过问卷卷制作了一份调查问卷“${survey.surveyName }”，需要您的帮助，您的意见非常重要。快快来吧帮忙回答。", "url":"//wenjuan/${survey.sid }.html","pic":"//images/logo/200-200.png"}'>
 												<a class="bds_qzone"></a>
 												<a class="bds_tsina"></a>
 												<a class="bds_tqq"></a>
@@ -146,21 +146,21 @@
 												document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
 												</script>
 												<!-- Baidu Button END -->
-												
+
 										<!-- <div class="bshare-custom icon-medium-plus"><div class="bsPromo bsPromo2"></div><a title="分享到QQ空间" class="bshare-qzone"></a><a title="分享到新浪微博" class="bshare-sinaminiblog"></a><a title="分享到人人网" class="bshare-renren"></a><a title="分享到腾讯微博" class="bshare-qqmb"></a><a title="分享到网易微博" class="bshare-neteasemb"></a><a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a></div>
 										<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=2&amp;lang=zh"></script>
 										<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script> -->
-										
+
 									</div>
 									<div style="text-align: right;float: right;line-height: 45px;">还可以输入：<span id="wordsInfo" style="color: green;">120</span>个字符。</div>
 								</div>
 							</div>
 						</div>
 						<div style="clear: both;"></div>
-						
+
 						</div>
 					</div>
-					
+
 					<%-- <div class="scmcLeft">
 						<ul>
 							<li><a href="${ctx }/design/my-collect.action?surveyId=${surveyId}" class="hover">答卷地址</a></li>
@@ -184,20 +184,20 @@
 							</div>
 							<div style="clear: both;">
 								<div class="scmcSurveySNSShare">
-									<textarea rows="3" cols="5">大家好，就在刚才我在调问网网制作了一份调查问卷“测试问卷测试问卷测试问卷测试问卷测试问卷测试问卷测试问卷”，需要您的帮助，您的意见非常重要。快快来吧帮忙回答。</textarea>
+									<textarea rows="3" cols="5">大家好，就在刚才我在问卷卷网制作了一份调查问卷“测试问卷测试问卷测试问卷测试问卷测试问卷测试问卷测试问卷”，需要您的帮助，您的意见非常重要。快快来吧帮忙回答。</textarea>
 								</div>
 							</div>
 						</div>
 						</div>
 					</div> -->
-					
+
 				</div>
 			</div>
-			
+
 		</div>
 		</div>
 	</div>
-	
+
 <script type="text/javascript">
 
 /*
@@ -208,14 +208,14 @@ function bindClipBoard(textareaId,clipBtn,clipSpanId){
 	clip.setCSSEffects( true );
 	var clipText=$("#"+textareaId).text();
 	clip.setText(clipText); // 设置要复制的文本。
-	//这个 button 不一定要求是一个 input 按钮，也可以是其他 DOM 元素。 
-	clip.glue(clipBtn); // 和上一句位置不可调换 
+	//这个 button 不一定要求是一个 input 按钮，也可以是其他 DOM 元素。
+	clip.glue(clipBtn); // 和上一句位置不可调换
 	clip.addEventListener('complete', function (client, text) {
 		//alert(text+":复成功");//notify("复制成功!");
 		$("#"+clipSpanId).show().delay(5000).fadeOut("slow");
 		//$("#"+textareaId).select();
 	});
-	clip.reposition(clipBtn); 
+	clip.reposition(clipBtn);
 }
 bindClipBoard("linkTextarea","clipLink","clipLinkSpan");
 */
@@ -232,7 +232,7 @@ $("#shareSurTextarea").keyup(function(){
 	}else{
 		$('#wordsInfo').addClass('redColor');
 	}
-	$('#bdshare').attr('data', '{"text":"' + $(this).val() + '", "url":"http://www.diaowen.net/wenjuan/${survey.sid }.html","pic":"http://www.diaowen.net/images/logo/200-200.png"}');
+	$('#bdshare').attr('data', '{"text":"' + $(this).val() + '", "url":"//wenjuan/${survey.sid }.html","pic":"//images/logo/200-200.png"}');
 });
 $("#shareSurTextarea").keyup();
 

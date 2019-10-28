@@ -38,12 +38,12 @@
 <div id="wrap">
 	<input type="hidden" id="id" name="id" value="${survey.id }">
 	<input type="hidden" id="surveyState" name="surveyState" value="${survey.surveyState }">
-	
+
 	<input type="hidden" id="ctx" value="${ctx }">
 	<div id="header" >
 		<div id="headerCenter"  class="bodyCenter">
 			<div class="header_Item header_logo">
-			<img alt="调问网" src="${ctx }/images/logo/LOGO.png" >
+			<img alt="问卷卷" src="${ctx }/images/logo/LOGO-new.png" >
 			<!-- <div style="font-family: '微软雅黑';font-size:26px;padding-left:10px;">DIAOWEN</div> -->
 			</div>
 			<div class="header_Item header_menu">
@@ -60,7 +60,7 @@
 			</div>
 		</div>
 	</div>
-	
+
 	<div class="creatgeSurveyStepBody">
 		<div class="creatgeSurveyStepContent bodyCenter">
 				<a href=""  class="csscStep csscStep4"><span class="csscStepLeft">&nbsp;</span><span class="csscStepCenter">设计问卷</span><span class="csscStepRight">&nbsp;</span></a>
@@ -70,7 +70,7 @@
 				<a href=""  class="csscStep csscStep6"><span class="csscStepLeft">&nbsp;</span><span class="csscStepCenter">数据分析</span><span class="csscStepRight">&nbsp;</span></a>
 		</div>
 	</div>
-	
+
 	<div style="">
 		<div class="main-tabs-content bodyCenter">
 			<div class="tab-content">
@@ -89,8 +89,8 @@
 		<div id="dwBodyContent" class="bodyCenter" style="border:1px solid #C1DAEC;">
 		<div id="dwBodyUser">
 			<div class="surveyCollectMiddle">
-				
-				
+
+
 				<div class="surveyCollectTop">
 					<div class="surveyCollectTitleDiv">
 						<span class="surveyCollectTitle">巴黎欧莱雅男士护肤品的市场调查</span>
@@ -108,9 +108,9 @@
 						</span>
 					</div>
 				</div>
-				
+
 				<div class="surveyCollectMiddleContent">
-					
+
 					<div class="collect_1_content">
 					<div style="margin: 0px auto; width: 950px;">
 						<div style="clear: both;"></div>
@@ -120,7 +120,7 @@
 									<div class="scmcRightTopLeftTitle">通过您的网站收集问卷</div>
 								</div>
 								<div style="padding-top: 15px;overflow: auto;clear: both;">
-								
+
 								<div class="scmcsiteLeft">
 									<div class="scmcsiteTitle">1、风格选择</div>
 									<div class="scmcsiteLeftContent">
@@ -145,7 +145,7 @@
 									</div>
 									<div style="clear: both;"></div>
 									<div style="color: #9B9B9B;font-size: 14px;padding-top: 10px;">高度与背景色可自动调节，请从页面左右侧预览实际效果。</div>
-									
+
 								</div>
 								<div class="scmcsiteRight">
 									<div class="scmcsiteTitle">2、代码复制</div>
@@ -156,17 +156,17 @@
 									<div style="clear: both;"></div>
 									<div style="color: #9B9B9B;font-size: 14px;padding-top: 10px;">高度与背景色可自动调节，请从页面左右侧预览实际效果。</div>
 								</div>
-								
+
 								</div>
 							</div>
 						</div>
 						</div>
 					</div>
-					
-					
+
+
 				</div>
 			</div>
-			
+
 		</div>
 		</div>
 	</div>

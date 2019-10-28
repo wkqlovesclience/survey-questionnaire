@@ -6,7 +6,7 @@
  * @author: wangkeqiang（@wangkeqiang, wkqsclience118706@163.com）
  * @github: https://github.com/wwangkeqiang/DWSurvey
  *
- * Copyright 2012, 2017 调问问卷(DWSurvey,http://dwsurvey.net)
+ * Copyright 2012, 2017 问卷卷问卷(DWSurvey,http://dwsurvey.net)
  *
  */
 $(document).ready(function(){
@@ -61,34 +61,34 @@ $(document).ready(function(){
 				$("#myDialogRoot").remove();
 			}
 		});
-		
+
 	}
-	
-	
+
+
 	//设置收集规则
 	$(".sur_collectSet").unbind();
 	$(".sur_collectSet").click(function(){
 		var url=ctx+"/js/dw/html/collectset.html";
-		
+
 		$.ajax({
 			url:url,
 			type:"get",
 			dataType:"html",
 			success:function(data){
-				
+
 				//$("body").append("<div id=\"myDialogRoot\"><div class='dialogMessage'></div></div>");
 				$("body").append("<div id=\"myDialogRoot\">"+data+"</div>");
 				$("#myDialogRoot .mailOnlyItem").hide();
-				
+
 				url=ctx+"/design/my-survey!attrs.action";
 				var data="id="+$("#id").val();
-				
+
 				$.ajax({
 					url:url,
 					data:data,
 					type:'post',
 					success:function(msg){
-						
+
 						var survey=eval("("+msg+")");
 						$("#myDialogRoot input[name='effective'][value='"+survey.surveyDetail.effective+"']").attr("checked",true);
 						$("#myDialogRoot input[name='effectiveIp'][value='"+survey.surveyDetail.effectiveIp+"']").attr("checked",true);
@@ -104,11 +104,11 @@ $(document).ready(function(){
 						}
 						$("#myDialogRoot input[name='showShareSurvey'][value='"+survey.surveyDetail.showShareSurvey+"']").attr("checked",true);
 						$("#myDialogRoot input[name='showAnswerDa'][value='"+survey.surveyDetail.showAnswerDa+"']").attr("checked",true);
-						
+
 					}
 				});
-				
-				
+
+
 				var myDialog=$( "#myDialogRoot" ).dialog({
 					width:550,
 					height:490,
@@ -148,16 +148,16 @@ $(document).ready(function(){
 				});
 			}
 		});
-		
+
 	});
-	
-	
+
+
 	function saveAttrs(){
 
 		var url=ctx+"/design/my-survey-style!save.action";
 		var surveyId=$("#id").val();
 		var data="surveyId="+surveyId;
-		//收集规则 
+		//收集规则
 		var effective=$("#myDialogRoot input[name='effective']:checked")[0]?"4":"0";
 		var effectiveIp=$("#myDialogRoot input[name='effectiveIp']:checked")[0]?"1":"0";
 		var rule=$("#myDialogRoot input[name='rule']:checked")[0]?"3":"0";
@@ -170,11 +170,11 @@ $(document).ready(function(){
 		var endNum=$("#myDialogRoot input[name='endNum']").val();
 		var showShareSurvey=$("#myDialogRoot input[name='showShareSurvey']:checked")[0]?"1":"0";
 		var showAnswerDa=$("#myDialogRoot input[name='showAnswerDa']:checked")[0]?"1":"0";
-		
+
 		data+="&effective="+effective+"&effectiveIp="+effectiveIp+"&rule="+rule+"&refresh="+refresh+"&ruleCode="+ruleCode+"&mailOnly="+mailOnly;
 		data+="&ynEndNum="+ynEndNum+"&ynEndTime="+ynEndTime+"&endTime="+endTime+"&endNum="+endNum;
 		data+="&showShareSurvey="+showShareSurvey+"&showAnswerDa="+showAnswerDa;
-		
+
 		$.ajax({
 			url : url,
 			data : data,
@@ -186,12 +186,12 @@ $(document).ready(function(){
 		});
 		return false;
 	}
-	
+
 	//
 	$(".sur_edit").unbind();
 	$(".sur_edit").click(function(){
 		//${ctx }/design/my-survey-design.action?surveyId=${surveyId}
-		
+
 		$("body").append("<div id=\"myDialogRoot\"><div class='dialogMessage'>您问卷已经发布，确认要重新编辑使问卷回到设计状态。<br/>是否确认返回设计状态！</div></div>");
 		var myDialog=$( "#myDialogRoot" ).dialog({
 			width:500,
@@ -229,10 +229,10 @@ $(document).ready(function(){
 				$("#myDialogRoot").remove();
 			}
 		});
-		
+
 		return false;
 	});
-	
+
 	$(".surveyStateBtn").unbind();
 	$(".surveyStateBtn").click(function(){
 		//var thVal=$("#surveyState").val();
@@ -272,7 +272,7 @@ $(document).ready(function(){
 		});
 		return false;
 	});
-	
+
 });
 
 function notify(msg,delayHid) {

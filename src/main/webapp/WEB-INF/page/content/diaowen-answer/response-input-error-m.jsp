@@ -58,9 +58,9 @@
 
   <div data-role="footer">
       <%--尊重开源、保留声明，感谢您的大力支持--%>
-  <h3><a href="http://www.diaowen.net/index-m.jsp" style="text-decoration: none;" rel="external">调问网</a> 提供支持</h3>
+  <h3><a href="//index-m.jsp" style="text-decoration: none;" rel="external">问卷卷</a> 提供支持</h3>
   </div>
-</div> 
+</div>
 
 <%@ include file="/WEB-INF/page/layouts/other.jsp"%>
 
