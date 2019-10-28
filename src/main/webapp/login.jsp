@@ -45,13 +45,13 @@
 			//	$(element).css("borderColor","#C40000");
 			}
 		});
-
+		
 		var ckCodeError=$.cookie("registerError");
 		if(ckCodeError!=null && ckCodeError=="0"){
 			$("#register-error").text("验证码不正确!");
 			$.removeCookie('registerError',{path:'/'});
 		}
-
+		
 	});
 </script>
 <style type="text/css">
@@ -78,22 +78,22 @@ label.error{
 	<div style="clear: both;"></div>
 	<div id="dwBody" >
 		<div id="dwBodyContent" class="bodyCenter" style="background: none;">
-
+				
 					<div class="dw_login_logo">
 						<h1 class="f1">DIAOWEN</h1>
 						<h2 class="f2" style="width: 460px;">调问专业<span class="f3">、</span>开源<span class="f3">、</span>实用的调研方式</h2>
 					</div>
-
-
+					
+					
 					<shiro:guest>
 					<div id="dwLoginContent">
 						<div class="dlcTitleBg" ></div>
 						<div class="dlcTitle" >
 							<a href="#" class="dlcTitleTab crt" >登录</a>
 						</div>
-
+						
 					<div class="loginFormContent">
-
+						
 						<form id="loginForm" action="${ctx }/login.jsp" method="post">
 						<div id="loginTabContent" >
 							<div id="login-error" class="errorMsg" style="color: red;padding-left: 60px;">&nbsp;
@@ -114,7 +114,7 @@ label.error{
 									<label for="" class="frm_label">邮箱</label>
 									<div class="frm_controls">
 										<input id="username" type="text" class="frm-controlM" name="username" value="" >
-										<span class="frm_desc">用来登录问卷卷，接收到激活邮件才能完成注册</span>
+										<span class="frm_desc">用来登录调问网，接收到激活邮件才能完成注册</span>
 									</div>
 								</div>
 								<div class="frmItem">
@@ -143,7 +143,7 @@ label.error{
 									<label for="" class="frm_label">&nbsp;</label>
 									<input type="submit"  value=" 登 录 " class="btnGreen" style="width: 330px;height: 45px;" />
 								</div>
-
+								
 								<div class="frmItem" style="overflow: auto;padding: 6px 5px;">
 									<label for="" class="frm_label">&nbsp;</label>
 									<!-- <label class="frmItemLabel" style="float: left;">
@@ -154,7 +154,7 @@ label.error{
 									<%--<a class="dw_style_a_1" tabindex="3" href="#">记住密码</a>--%>
 									<%--<a class="dw_style_a_1" href="${ctx }/pwd/findPwd.jsp" target="_blank" style="float: right;">忘记密码</a>--%>
 								</div>
-								<!--
+								<!-- 
 								<div class="frmItem" style="padding: 10px 5px;">
 									<label for="" class="frm_label">&nbsp;</label>
 									还没有账号&nbsp;&nbsp;<a href="">免费注册</a>
@@ -165,7 +165,7 @@ label.error{
 						</div>
 						</div>
 						</form>
-
+						
 					</div>
 			</div>
 			</shiro:guest>
@@ -175,9 +175,9 @@ label.error{
 						<div class="dlcTitle" style="padding: 17px;" >
 							提示：已登录
 						</div>
-
+					
 					<div class="loginFormContent">
-							<div>
+							<div> 
 								<div style="margin: 80px auto;">
 									<div style="padding-left: 100px;font-size: 20px;">
 										亲爱的&nbsp;<span style="color:#497289;"><shiro:principal></shiro:principal></span>&nbsp;您已经登陆
@@ -191,21 +191,21 @@ label.error{
 							  </div>
 					</div>
 				</div>
-
+				
 			</shiro:user>
 		</div>
 	</div>
-
+	
 	<div class="dw_foot" style="padding-top:15px;">
 		<!-- 必须保留声明 start -->
 	<div class="footer-copyright" style="color: gray;padding-top: 0px;font-size: 16px;">
-		Powered by <a href="http://www.dwsurvey.net" style="text-decoration: none;color: gray;">我想静静</a>
+		Powered by <a href="http://www.dwsurvey.net" style="text-decoration: none;color: gray;">DWSurvey</a>
 		&nbsp;&nbsp;&nbsp;Copyright © 2012-2017
-		<%--<a href="http://www.diaowen.net" style="text-decoration: none;color: rgb(53, 117, 136);">问卷卷</a>--%>
+		<a href="http://www.diaowen.net" style="text-decoration: none;color: rgb(53, 117, 136);">调问网</a>
 	</div>
 		<!-- 必须保留声明 end -->
 	</div>
-
+	
 	</div>
 <script type="text/javascript">
 resizeBodyWidth();
@@ -216,7 +216,7 @@ $("a").attr("hidefocus",true);
 <script type="text/javascript">
 
 $(document).ready(function(){
-
+	 
 	 var top=$(window).height()/2-320/2;
 	 var left=$(window).width()/2-550/2;
 	 //var A=window.open(url,"TencentLogin","top="+top+",left="+left+",width=550,height=320,menubar=0,scrollbars=1,resizable=1,status=1,titlebar=0,toolbar=0,location=1");

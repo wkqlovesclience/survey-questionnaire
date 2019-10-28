@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <div class="dw_footnav" style="text-align: center;padding-top: 16px;">
-	<a href="/" style="color: gray;font-size: 16px;">我想静静问卷网&nbsp;&nbsp;&nbsp;</a>
+	<a href="/" style="color: gray;font-size: 16px;">京ICP备13050030号-3&nbsp;&nbsp;&nbsp;</a>
 </div>
 <%-- <div id="footer_wrapper">
 	<div class="footer_menu">
@@ -17,7 +17,7 @@
         <div class="cleaner"></div>
 	</div>
 </div>
-<div class="weixinImgPos" style="font-size:12px">
+<div class="weixinImgPos" style="font-size:12px">      
 	<img src="${ctx }/images/dianwen_weixin.jpg"   width="130" style="padding:5px;">
 	<div>扫描并关注微信账号</div>
 </div> --%>

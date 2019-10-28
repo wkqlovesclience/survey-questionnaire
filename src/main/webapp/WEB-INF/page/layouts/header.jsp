@@ -5,10 +5,10 @@
 <div id="header" >
 		<div id="headerCenter"  class="bodyCenter">
 			<div class="header_Item header_logo">
-			<%--
+			<%-- 
 			<a href="${ctx }/">
-				<img alt="问卷卷" src="${ctx }/images/logo/LOGO.png" >
-			</a>
+				<img alt="调问网" src="${ctx }/images/logo/LOGO.png" >
+			</a> 
 			--%>
 			<%@ include file="logo-img.jsp"%>
 			</div>
@@ -29,7 +29,7 @@
 					<a href="${ctx }/login.jsp" class="btn-a-1">登录</a>
 				</div>
 			</shiro:guest>
-
+			
 			<shiro:user>
 				<div class="header_Item header_menu">
 					<ul>
